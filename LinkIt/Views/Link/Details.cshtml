@@ -1,0 +1,70 @@
+﻿@model LinkIt.Models.Entities.Link;
+@inject IHttpContextAccessor http
+@{
+    ViewData["Title"] = "Details";
+    var userId = int.Parse(http.HttpContext.Session.GetString("userId"));
+    int vote_value = 0;
+    foreach (var v in Model.Votes)
+    {
+        if (v.UserId == userId)
+        {
+            vote_value = v.Value;
+        }
+    }
+}
+<div class="link-details-container">
+    <div id="link-card" class="link-details-container-2">
+        <h1 class="link-title link-title-link">@Model.Title</h1>
+        <h5 class="link-description">@Model.Description</h5>
+        <h1 class="link-username">@Model.User?.Username</h1>
+        @if (vote_value == 1)
+        {
+            <a id="upvote" asp-action="UpvoteDetails" asp-route-id="@Model.Id" class="link-upvote link-hover voted"><i class="bi bi-arrow-up-circle"></i></a>
+        }
+        else
+        {
+            <a id="upvote" asp-action="UpvoteDetails" asp-route-id="@Model.Id" class="link-upvote link-hover"><i class="bi bi-arrow-up-circle"></i></a>
+        }
+        <span class="link-vote link-number">@Model.Score</span>
+        @if (vote_value == -1)
+        {
+            <a id="downvote" asp-action="DownVoteDetails" asp-route-id="@Model.Id" class="link-downvote link-hover voted"><i class="bi bi-arrow-down-circle"></i></a>
+        }
+        else
+        {
+            <a id="downvote" asp-action="DownVoteDetails" asp-route-id="@Model.Id" class="link-downvote link-hover"><i class="bi bi-arrow-down-circle"></i></a>
+        }
+        <i class="bi bi-chat link-comment-icon-details link-hover-details"></i>
+        <span class="link-comment-number-details link-number">@Model.Comments?.Count</span>
+        <h5 class="link-date">Créé le @Model.CreatedDate</h5>
+    </div>
+    <div>
+        <form id="comment-form">
+            <input id="link-identifier" name="LinkId" type="hidden" value="@Model.Id" />
+            <textarea id="comment-text" placeholder="Commentez votre opinion!" name="text" class="form-control link-comment-textarea" minlength="3" maxlength="500" onkeyup="countCharDescription(this)"></textarea>
+            <label class="numberofwords" style="color:black;"><span id="charNumDescription">0</span>/500</label>
+            <input type="submit" value="Commenter" class="btn btn-primary creation-button comment-creation-btn" />
+        </form>
+    </div>
+    <div>
+        <hr class="comment-border"/>
+        <div id="comment-section">
+            <partial name="_Comments" model="Model.Comments" />
+        </div>
+    </div>
+</div>
+
+<<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    function countCharDescription(val) {
+        var len = val.value.length;
+        $('#charNumDescription').text(len);
+    };
+    $('#comment-form').attr("action", "");
+    $('#comment-form').attr("onsubmit", "return false;");
+    $(function () {
+        $('#comment-form').on("submit", function () {
+            $('#comment-section').load("@Url.Action("CreateComment","Link")", { linkId: $('#link-identifier').val(), text: $('#comment-text').val() });
+        });
+    });
+</script>

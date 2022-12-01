@@ -1,0 +1,8 @@
+﻿@model IEnumerable<LinkIt.Models.Entities.Link>
+@{
+}
+<h1 class="page-title-links">Voici les résultats de votre recherche</h1>
+@foreach (var item in Model)
+{
+    <partial name="_LinkCard" model="item" />
+}

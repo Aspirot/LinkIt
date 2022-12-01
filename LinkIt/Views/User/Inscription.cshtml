@@ -1,0 +1,57 @@
+﻿@model LinkIt.Models.Entities.User
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Inscription";
+}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LinkIt.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+
+
+<body>
+    <h1 class="title">Créez un compte Link-It</h1>
+    <div class="container">
+        <div class="line"></div>
+        @if(ViewBag.ErrorMessage != null){
+            <div class="alert alert-custom alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <form asp-action="InscriptionSubmit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="addressContainer form-group">
+                <label asp-for="Email" class="addressLabel control-label">Courriel</label>
+                <input asp-for="Email" class="addressInput form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger text-alert">Le champ du courriel est nécessaire</span>
+            </div>
+            <div class="usernameContainer form-group">
+                <label asp-for="Username" class="usernameLabel control-label">Nom d'utilisateur</label>
+                <input asp-for="Username" class="usernameInput form-control" type="text" />
+                <span asp-validation-for="Username" class="text-danger text-alert">Le champ du nom d'utilisateur est nécessaire</span>
+            </div>
+            <div class="passwordContainer form-group">
+                <label asp-for="Password" class="passwordLabel control-label">Mot de passe</label>
+                <input asp-for="Password" class="passwordInput form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger text-alert">Le champ du mot de passe est nécessaire</span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="S'inscrire" class="submitButton" />
+            </div>
+        </form>
+        <span class="details">Vous possédez déjà un compte Link-It? </span>
+        <a href="/user/connection" class="changePage">Allez à la page de connexion</a>
+    </div>
+</body>
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

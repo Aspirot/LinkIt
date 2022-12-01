@@ -1,0 +1,225 @@
+body {
+	margin: 0px;
+	background-color: #484444;
+	overflow:hidden;
+}
+.alert-custom {
+	width:300px;
+	left:460px;
+	margin-top: -520px;
+}
+.text-alert {
+	color: violet !important;
+	margin-top: 30px !important;
+}
+.container {
+	background-color: rgba(164.6874949336052, 83.71614262461662, 83.71614262461662, 1);
+	width: 840px;
+	height: 704px;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+.addressContainer {
+	width: 300px;
+	height: 144px;
+	position: absolute;
+	left: 75px;
+	top: 75px;
+}
+.addressConnectionContainer {
+	width: 300px;
+	height: 144px;
+	position: absolute;
+	left: 75px;
+	top: 150px;
+}
+.addressLabel {
+	color: rgba(0, 0, 0, 1);
+	width: 300px;
+	height: 48px;
+	position: absolute;
+	left: 0px;
+	top: 1px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+.addressInput {
+	background-color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 68px;
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid rgba(243.00000071525574, 113.00000086426735, 113.00000086426735, 1);
+	color: rgba(199.0000033378601, 58.00000034272671, 58.00000034272671, 1);
+	font-family: Inter;
+	font-size: 24px;
+}
+.usernameContainer {
+	width: 300px;
+	height: 144px;
+	position: absolute;
+	left: 75px;
+	top: 250px;
+}
+.usernameLabel {
+	color: rgba(0, 0, 0, 1);
+	width: 300px;
+	height: 48px;
+	position: absolute;
+	left: 0px;
+	top: 1px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+.field-validation-error {
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	top: 85px;
+	right: 0;
+	left: 0;
+	text-align: right;
+}
+.field-validation-valid {
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	top: 85px;
+	right: 0;
+	left: 0;
+	text-align: right;
+	visibility:hidden;
+}
+.usernameInput {
+	background-color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 68px;
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid rgba(243.00000071525574, 113.00000086426735, 113.00000086426735, 1);
+	color: rgba(199.0000033378601, 58.00000034272671, 58.00000034272671, 1);
+	font-family: Inter;
+	font-size: 24px;
+}
+.passwordContainer { 
+	width:300px;
+	height:144px;
+	position:absolute;
+	left:75px;
+	top:425px;
+}
+.passwordConnectionContainer {
+	width: 300px;
+	height: 144px;
+	position: absolute;
+	left: 75px;
+	top: 350px;
+}
+.passwordLabel { 
+	color:rgba(0, 0, 0, 1);
+	width:300px;
+	height:48px;
+	position:absolute;
+	left:0px;
+	top:1px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.passwordInput {
+	background-color: rgba(255, 255, 255, 1);
+	width: 300px;
+	height: 68px;
+	position: absolute;
+	left: 0px;
+	top: 48px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid rgba(243.00000071525574, 113.00000086426735, 113.00000086426735, 1);
+	color: rgba(199.0000033378601, 58.00000034272671, 58.00000034272671, 1);
+	font-family: Inter;
+	font-size: 24px;
+}
+.submitButton {
+	background-color: rgba(199.0000033378601, 58.00000034272671, 58.00000034272671, 1);
+	width: 134px;
+	height: 68px;
+	position: absolute;
+	left: 145px;
+	top: 585px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #8b1616;
+	color: rgba(255, 255, 255, 1);
+	font-family: Inter;
+	font-size: 24px;
+}
+.details {
+	color: rgba(0, 0, 0, 1);
+	width: 288px;
+	height: 96px;
+	position: fixed;
+	left: 480px;
+	top: 250px;
+	font-family: Inter;
+	text-align: left;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+.changePage { 
+	color:rgba(31.913685724139214, 27.85963386297226, 230.56249290704727, 1);
+	width:226px;
+	height:106px;
+	position:fixed;
+	left:480px;
+	top:360px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.title {
+	color: rgba(187.00000405311584, 144.14584279060364, 144.14584279060364, 1);
+	width: 1102px;
+	height: 111px;
+	position: absolute;
+	left: 169px;
+	font-family: K2D;
+	text-align: left;
+	font-size: 100px;
+	letter-spacing: 0;
+	margin: 0px;
+	top: 2%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.line {
+	border-left: 1px solid black;
+	height: 600px;
+	transform: translate(50%,10%);
+}

@@ -1,0 +1,8 @@
+﻿@model IEnumerable<LinkIt.Models.Entities.Link>
+@{
+}
+<h1 class="page-title-links">Vos liens</h1>
+@foreach (var item in Model)
+{
+    <partial name="_LinkCardDelete" model="item" />
+}

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<LinkIt.Models.Entities.Link>
+
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="main-content">
+        <h1 class="page-title-links">@ViewBag.Message</h1>
+        @foreach (var item in Model)
+        {
+            <partial name="_LinkCardDelete" model="item" />
+        }
+    </div>
+</body>
+</html>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $('#home-icon').attr("href", "#");
+    $('#home-brand').attr("href", "#");
+    $('#self-links').attr("href", "#");
+    $('#search-form').attr("action", "");
+    //$('#nav-add').attr("href", "#");
+    $('#search-form').attr("onsubmit", "return false;");
+    $(function () {
+        $('#home-icon').on("click", toHome);
+        $('#home-brand').on("click", toHome);
+        function toHome() {
+            $('#main-content').load("@Url.Action("Recent","Link")");
+        }
+        $('#search-form').on("submit", function () {
+            $('#main-content').load("@Url.Action("SearchPartial","Link")", { search: $('#search-input').val() });
+        });
+        //$('#nav-add').on("click", function () {
+        //    $('#main-content').load("@Url.Action("CreateLink","Link")");
+        //});
+        $('#self-links').on("click", function () {
+            $('#main-content').load("@Url.Action("SelfLinksPartial","Link")");
+            $(".popup-overlay, .popup-content").removeClass("active");
+        });
+    });
+</script>

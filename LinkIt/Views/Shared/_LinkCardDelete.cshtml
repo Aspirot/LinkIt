@@ -1,0 +1,34 @@
+﻿@model LinkIt.Models.Entities.Link;
+@inject IHttpContextAccessor http
+@{
+    var userId = int.Parse(http.HttpContext.Session.GetString("userId"));
+    int vote_value = 0;
+    foreach (var v in Model.Votes)
+    {
+        if(v.UserId == userId){
+            vote_value = v.Value;
+        }
+    }
+}
+<div id="link-card" class="link-container">
+    <h1 class="link-title"><a asp-action="Details" asp-route-id="@Model.Id" class="link-title-link link-hover">@Model.Title</a></h1>
+    <h5 class="link-shortdescription">@Model.ShortDescription</h5>
+    <a id="delete-icon" asp-action="DeleteLink" asp-route-id="@Model.Id" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce lien?')" class="link-delete link-hover"><i class="bi bi-dash-circle"></i></a>
+    @if(vote_value == 1){
+        <a id="upvote" asp-action="Upvote" asp-route-id="@Model.Id" class="link-upvote link-hover voted"><i class="bi bi-arrow-up-circle"></i></a>
+    }else {
+        <a id="upvote" asp-action="Upvote" asp-route-id="@Model.Id" class="link-upvote link-hover" ><i class="bi bi-arrow-up-circle"></i></a>
+    }
+    <span class="link-vote link-number">@Model.Score</span>
+    @if (vote_value == -1)
+    {
+        <a id="downvote" asp-action="DownVote" asp-route-id="@Model.Id" class="link-downvote link-hover voted"><i class="bi bi-arrow-down-circle"></i></a>
+    }
+    else
+    {
+        <a id="downvote" asp-action="DownVote" asp-route-id="@Model.Id" class="link-downvote link-hover"><i class="bi bi-arrow-down-circle"></i></a>
+    }
+    <a id="comments" class="link-comment-icon link-hover" asp-action="Details" asp-route-id="@Model.Id"><i class="bi bi-chat"></i></a>
+    <span class="link-comment-number link-number">@Model.Comments?.Count</span>
+    <h5 class="link-card-date">Créé le @Model.CreatedDate</h5>
+</div>

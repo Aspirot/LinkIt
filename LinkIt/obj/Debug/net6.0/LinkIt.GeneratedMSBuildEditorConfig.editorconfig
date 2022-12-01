@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LinkIt
+build_property.RootNamespace = LinkIt
+build_property.ProjectDir = E:\School\Web serveur\Projet\LinkIt\LinkIt\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\School\Web serveur\Projet\LinkIt\LinkIt
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Link/CreateLink.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlua1xDcmVhdGVMaW5rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Link/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlua1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Link/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlua1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Link/SelfLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlua1xTZWxmTGlua3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_CommentCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21tZW50Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_Comments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21tZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_CreateLink.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DcmVhdGVMaW5rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_LinkCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaW5rQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_LinkCardDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaW5rQ2FyZERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaW5rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_LinksDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaW5rc0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_SearchLinks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2hMaW5rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/User/Connection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDb25uZWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/User/Inscription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbnNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/Web serveur/Projet/LinkIt/LinkIt/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-e0xv2fuiuc

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkIt", "LinkIt\LinkIt.csproj", "{FE2A34E2-050B-480B-BA9A-97990E59906C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE2A34E2-050B-480B-BA9A-97990E59906C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2A34E2-050B-480B-BA9A-97990E59906C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2A34E2-050B-480B-BA9A-97990E59906C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2A34E2-050B-480B-BA9A-97990E59906C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44115941-D40F-43BA-8843-BADA50339A44}
+	EndGlobalSection
+EndGlobal

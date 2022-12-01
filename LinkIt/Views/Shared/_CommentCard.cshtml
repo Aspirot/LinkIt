@@ -1,0 +1,17 @@
+﻿@model LinkIt.Models.Entities.Comment
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="detail-comment-container">
+    <h5 class="detail-comment-user">@if (Model.User == null || Model.User.Username == ""){
+            @ViewBag.Username
+        }
+        else{
+            @Model.User.Username
+        } a publié à @Model.CreatedDate</h5>
+    <div class="detail-comment-description-container">
+        <h5 class="detail-comment-description">@Model.Description</h5>
+    </div>
+</div>

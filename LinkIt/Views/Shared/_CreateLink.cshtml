@@ -1,0 +1,59 @@
+﻿@model LinkIt.Models.Entities.Link
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 class="page-title">Créer un lien</h1>
+
+<div class="creation-container">
+    <form asp-action="CreateLinkSubmit" style="margin-left: 80px;">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <input asp-for="UserId" type="hidden" value="@ViewBag.UserId" />
+        </div>
+        <div class="form-group">
+            <input asp-for="Score" type="hidden" value=0 />
+        </div>
+        <div class="form-group">
+            <label asp-for="Title" class="control-label creation-title-label">Titre</label>
+            <input onkeyup="countCharTitle(this)" maxlength="32" asp-for="Title" class="form-control creation-title-input" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+            <label style="color:black;"><span id="charNumTitle">0</span>/32</label>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="control-label creation-description-label"></label>
+            <textarea asp-for="Description" class="form-control creation-description-input" maxlength="500" onkeyup="countCharDescription(this)"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+            <label style="color:black;"><span id="charNumDescription">0</span>/500</label>
+        </div>
+        <div class="form-group">
+            <input asp-for="ShortDescription" type="hidden" value="" />
+        </div>
+        <div class="form-group">
+            <input asp-for="CreatedDate" type="hidden" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Créer" class="btn btn-primary creation-button" />
+        </div>
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-custom alert-danger" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+    </form>
+</div>
+<<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    function countCharTitle(val) {
+        var len = val.value.length;
+        $('#charNumTitle').text(len);
+    };
+    function countCharDescription(val) {
+        var len = val.value.length;
+        $('#charNumDescription').text(len);
+    };
+</script>

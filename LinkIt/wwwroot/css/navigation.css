@@ -1,0 +1,161 @@
+﻿.home {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    width: 36px;
+    height: 36px;
+}
+.nav-home {
+    padding-top: 20px;
+    margin-left: 15px
+}
+.nav-bar {
+    background-color: rgba(165.00000536441803, 84.00000259280205, 84.00000259280205, 0.699999988079071) !important;
+    height: 74px;
+    border-bottom: none !important;
+}
+.nav-brand {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    width: 130px !important;
+    height: 43px !important;
+    font-family: Inter !important;
+    text-align: left !important;
+    font-size: 40px !important;
+    letter-spacing: 0 !important;
+    line-height: 30px !important;
+    margin-right: 0rem !important;
+    margin-left: 15px;
+}
+.search-input {
+    background-color: rgba(187.00000405311584, 144.14584279060364, 144.14584279060364, 1);
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    border-color: black;
+    border: solid 1px;
+    width: 793px;
+    height: 36px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 25px;
+    margin-left: 45px
+}
+.search-input::placeholder {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1);
+    opacity: 1;
+}
+.add {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    font-size: 47px;
+}
+.add-btn {
+    margin-left: 25px;
+}
+.username {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    font-family: Inter;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 30px;
+}
+.search {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    font-size: 30px;
+}
+.search-btn {
+    border: none;
+    background-color: inherit;
+    margin-left: 30px;
+    margin-top: 13px;
+}
+
+.popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+}
+
+.popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+}
+
+.popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+}
+
+.popup-overlay {
+    background-color: rgba(255, 255, 255, 0);
+    width: 196px;
+    height: 297px;
+    position: absolute;
+    right: 1px;
+    top: 50px;
+}
+
+.popup-container {
+    background-color: rgba(164.6874949336052, 83.71614262461662, 83.71614262461662, 1);
+    width: 174px;
+    height: 258px;
+    position: absolute;
+    left: 7px;
+    top: 13px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.logout-icon {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    left: 30px;
+    top: 169px;
+    font-size: 30px;
+}
+
+.person-icon {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1) !important;
+    width: 30px;
+    height: 31px;
+    position: absolute;
+    left: 28px;
+    top: 65px;
+    font-size: 30px;
+}
+
+.logout {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1);
+    width: 106px;
+    height: 32px;
+    position: absolute;
+    left: 68px;
+    top: 176px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.profile {
+    color: rgba(73.31249848008156, 26.881250962615013, 26.881250962615013, 1);
+    width: 106px;
+    height: 32px;
+    position: absolute;
+    left: 68px;
+    top: 73px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.popup-border {
+    transform: rotate(-1.4033419209422001e-14deg);
+    width: 136px;
+    height: 0px;
+    position: absolute;
+    left: 26px;
+    top: 135px;
+}

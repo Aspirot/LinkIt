@@ -1,0 +1,7 @@
+﻿@model IEnumerable<LinkIt.Models.Entities.Comment>
+@{
+}
+@foreach (var item in Model)
+{
+    <partial name="_CommentCard" model="item" />
+}
